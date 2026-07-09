@@ -12,6 +12,8 @@
     <bean id="bookService"
           class="com.library.service.BookService">
 
+        <constructor-arg ref="bookRepository"/>
+
         <property
                 name="bookRepository"
                 ref="bookRepository"/>
