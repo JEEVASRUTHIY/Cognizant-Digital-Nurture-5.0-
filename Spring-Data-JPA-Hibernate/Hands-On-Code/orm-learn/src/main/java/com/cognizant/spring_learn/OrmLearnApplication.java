@@ -8,12 +8,15 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ConfigurableApplicationContext;
 
+import java.util.List;
+
 @SpringBootApplication
 public class OrmLearnApplication {
 
     private static final Logger LOGGER =
             LoggerFactory.getLogger(
-                    OrmLearnApplication.class);
+                    OrmLearnApplication.class
+            );
 
     private static CountryService countryService;
 
@@ -28,13 +31,17 @@ public class OrmLearnApplication {
         countryService =
                 context.getBean(CountryService.class);
 
-        // Hands-on 6
-        getCountryByCodeTest();
+        // Previous Hands-on tests
+        // getCountryByCodeTest();
+        // testAddCountry();
 
-        // Hands-on 7
-        testAddCountry();
+        // Query Methods tests
+        testCountryContainingText();
+        testCountryContainingTextSorted();
+        testCountryStartingWith();
     }
 
+    // Find country using country code
     private static void getCountryByCodeTest() {
 
         LOGGER.info("Find country test started");
@@ -58,6 +65,7 @@ public class OrmLearnApplication {
         LOGGER.info("Find country test ended");
     }
 
+    // Add a new country
     private static void testAddCountry() {
 
         LOGGER.info("Add country test started");
@@ -81,5 +89,63 @@ public class OrmLearnApplication {
         );
 
         LOGGER.info("Add country test ended");
+    }
+
+    // Find country names containing "ou"
+    private static void testCountryContainingText() {
+
+        LOGGER.info(
+                "Countries containing 'ou'"
+        );
+
+        List<Country> countries =
+                countryService.searchCountries("ou");
+
+        for (Country country : countries) {
+            LOGGER.info(
+                    "{} - {}",
+                    country.getCode(),
+                    country.getName()
+            );
+        }
+    }
+
+    // Find country names containing "ou",
+    // sorted in ascending order by name
+    private static void testCountryContainingTextSorted() {
+
+        LOGGER.info(
+                "Countries containing 'ou', sorted by name"
+        );
+
+        List<Country> countries =
+                countryService.searchCountriesSorted("ou");
+
+        for (Country country : countries) {
+            LOGGER.info(
+                    "{} - {}",
+                    country.getCode(),
+                    country.getName()
+            );
+        }
+    }
+
+    // Find country names beginning with "Z"
+    private static void testCountryStartingWith() {
+
+        LOGGER.info(
+                "Countries starting with 'Z'"
+        );
+
+        List<Country> countries =
+                countryService.searchCountriesStartingWith("Z");
+
+        for (Country country : countries) {
+            LOGGER.info(
+                    "{} - {}",
+                    country.getCode(),
+                    country.getName()
+            );
+        }
     }
 }
