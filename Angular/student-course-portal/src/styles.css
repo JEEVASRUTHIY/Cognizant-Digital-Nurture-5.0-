@@ -1,0 +1,16 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Inter, Arial, sans-serif; background: #f4f7fb; color: #172033; }
+h1,h2,h3 { margin-top: 0; }
+button { background:#2956d8; color:white; border:0; padding:10px 16px; border-radius:8px; cursor:pointer; }
+button:disabled { opacity:.45; cursor:not-allowed; }
+input,select { width:100%; padding:10px; margin:6px 0 4px; border:1px solid #b7c0d1; border-radius:7px; }
+label { display:block; margin:13px 0; font-weight:600; }
+.panel { background:white; padding:24px; border-radius:14px; box-shadow:0 5px 22px #18264a12; margin-bottom:20px; }
+.grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); gap:18px; }
+.stats { display:flex; gap:16px; flex-wrap:wrap; }
+.stat { background:#e9efff; padding:18px; border-radius:12px; min-width:160px; }
+.error { color:#c62828; font-size:.86rem; }
+.success { color:#17733b; background:#e5f7ec; padding:12px; border-radius:8px; }
+.ng-invalid.ng-touched { border-color:#d32f2f; }
+.ng-valid.ng-touched { border-color:#238636; }
+.row { display:flex; gap:10px; align-items:center; }

@@ -1,0 +1,89 @@
+.app {
+  min-height: 100vh;
+  padding: 40px max(20px, calc((100vw - 960px) / 2));
+}
+
+.app header {
+  margin-bottom: 26px;
+}
+
+.app header p {
+  margin: 0 0 6px;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.app h1 {
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+.examples {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  padding: 26px;
+  border: 1px solid #dbe4ef;
+  border-radius: 15px;
+  background: #ffffff;
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+.label {
+  margin: 0;
+  color: #64748b;
+}
+
+.counter {
+  display: block;
+  margin: 8px 0 22px;
+  font-size: 3rem;
+}
+
+.button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+}
+
+button {
+  padding: 9px 13px;
+  border: 0;
+  border-radius: 8px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+}
+
+.event-message,
+.conversion-result {
+  margin: 20px 0 0;
+  padding: 12px;
+  border-radius: 8px;
+  background: #eff6ff;
+}
+
+.card h2 {
+  margin-top: 0;
+  color: green;
+}
+
+.card form {
+  display: grid;
+  gap: 14px;
+}
+
+.card label {
+  display: grid;
+  gap: 6px;
+  font-weight: 700;
+}
+
+.card input {
+  padding: 10px;
+  border: 1px solid #b8c4d4;
+  border-radius: 8px;
+}

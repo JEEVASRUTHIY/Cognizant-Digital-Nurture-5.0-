@@ -1,0 +1,61 @@
+.app {
+  min-height: 100vh;
+  padding: 40px max(20px, calc((100vw - 1100px) / 2));
+}
+
+.page-header {
+  margin-bottom: 28px;
+}
+
+.page-header p {
+  margin: 0 0 6px;
+  color: #2563eb;
+  font-weight: 700;
+}
+
+.page-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 18px;
+}
+
+.post-card {
+  padding: 22px;
+  border: 1px solid #dbe4f0;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.06);
+}
+
+.post-card h2 {
+  margin: 8px 0 10px;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+}
+
+.post-card p {
+  margin: 0;
+  color: #475569;
+  line-height: 1.55;
+}
+
+.post-number {
+  color: #2563eb;
+  font-size: 0.78rem;
+  font-weight: 700;
+}
+
+.status {
+  padding: 20px;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.error {
+  color: #b91c1c;
+}

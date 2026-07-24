@@ -1,0 +1,50 @@
+.score-card {
+  width: min(520px, 100%);
+  padding: 36px;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 18px 45px rgba(30, 41, 59, 0.12);
+  text-align: center;
+}
+
+.score-card h1 {
+  margin: 0 0 26px;
+  color: brown;
+}
+
+.score-card dl {
+  display: grid;
+  gap: 14px;
+  margin: 0;
+}
+
+.detail {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.detail dt {
+  font-weight: 700;
+}
+
+.detail dd {
+  margin: 0;
+}
+
+.name {
+  color: blue;
+}
+
+.school {
+  color: crimson;
+}
+
+.total {
+  color: darkmagenta;
+}
+
+.score {
+  color: forestgreen;
+  font-size: 1.15rem;
+}

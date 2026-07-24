@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-labelledby="title desc">
+  <title id="title">Modern office space</title>
+  <desc id="desc">An illustrated modern office with desks, windows and plants</desc>
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e0f2fe"/>
+      <stop offset="1" stop-color="#f8fafc"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="420" fill="url(#wall)"/>
+  <rect x="42" y="48" width="170" height="170" rx="6" fill="#bae6fd" stroke="#64748b" stroke-width="8"/>
+  <rect x="234" y="48" width="170" height="170" rx="6" fill="#bae6fd" stroke="#64748b" stroke-width="8"/>
+  <rect x="426" y="48" width="170" height="170" rx="6" fill="#bae6fd" stroke="#64748b" stroke-width="8"/>
+  <path d="M0 315h640v105H0z" fill="#cbd5e1"/>
+  <path d="M90 276h185l28 40H62z" fill="#8b5cf6"/>
+  <rect x="150" y="315" width="18" height="72" fill="#475569"/>
+  <rect x="235" y="315" width="18" height="72" fill="#475569"/>
+  <path d="M370 276h185l28 40H342z" fill="#0ea5e9"/>
+  <rect x="430" y="315" width="18" height="72" fill="#475569"/>
+  <rect x="515" y="315" width="18" height="72" fill="#475569"/>
+  <rect x="105" y="242" width="62" height="34" rx="3" fill="#1e293b"/>
+  <rect x="388" y="242" width="62" height="34" rx="3" fill="#1e293b"/>
+  <circle cx="45" cy="280" r="30" fill="#22c55e"/>
+  <rect x="34" y="302" width="22" height="42" fill="#92400e"/>
+</svg>

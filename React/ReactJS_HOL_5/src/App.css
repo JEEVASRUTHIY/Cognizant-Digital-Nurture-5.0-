@@ -1,0 +1,24 @@
+.app {
+  min-height: 100vh;
+  padding: 34px;
+}
+
+.cohorts {
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 30px;
+  border: 1px solid #dce4ef;
+  background: #ffffff;
+}
+
+.cohorts h1 {
+  margin: 0 10px 28px;
+  font-size: 2.3rem;
+}
+
+.cohort-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
